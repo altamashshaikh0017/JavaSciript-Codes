@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>C++</li>
+    </ul>
+    <script>
+      const div= document.createElement('div')
+          console.log(div);
+          div.className = "main"
+          div.id = Math.round(Math.random() *10 + 1);
+          div.setAttribute("title" , "Generated Title");
+          div.style.backgroundColor = "lime";
+          div.style.padding = "12px";
+          div.style.borderRadius = "20px"
+          div.style.width = "250px"
+          div.style.textAlign = "center"
+          const addText = document.createTextNode("Javascrript DOM Manipulation")
+          div.appendChild(addText)
+          document.body.appendChild(div)
+
+      function addLanguage(language) {
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(li)
+      }
+      addLanguage('Python')
+      addLanguage('Java')
+
+      //Edit
+      const secondLang = document.querySelector('li:nth-child(2)')
+      const newLi = document.createElement('li')
+      newLi.textContent = "Ruby"
+      secondLang.replaceWith(newLi)
+     
+      //remove
+      const removeLi = document.querySelector('li:last-child')
+      removeLi.remove();
+    </script>
+</body>
+</html>

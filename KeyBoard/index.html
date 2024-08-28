@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50;
+            color: #b8e2ee;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the project container */
+        .project {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling for the key press message */
+        .key {
+            color: #b8e2ee;
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+
+        /* Styling for the color div */
+        .color {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #004d40;
+            border-radius: 8px;
+            background-color: #00796b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+        }
+
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            /* border: 1px solid #004d40;  */
+        }
+
+        /* Styling the table cells */
+        td {
+            padding: 10px;
+            border: 1px solid #004d40; 
+        }
+
+        /* Adding zebra striping to table rows */
+        tr:nth-child(even) {
+            background-color: #00796b;
+        }
+
+        /* Adding hover effect for rows */
+        tr:hover {
+            background-color: #004d40;
+        }
+    </style>
+    <div class="project">
+        <div id="insert">
+          <div class="key">Press the key and watch magic</div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

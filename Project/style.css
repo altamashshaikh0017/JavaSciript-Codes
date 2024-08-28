@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #212121;
+    background-color:#fff;
+}
+*{
+    box-sizing: border-box;
+}
+span{
+    display: block;
+}
+.canvas{
+    margin: 100px auto 100px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.button{
+    
+    height: 100px;
+    width: 100px; 
+    border: 2px solid #212121;
+    display: inline-block;
+}
+
+#grey{
+    background-color: gray;
+}
+#blue{
+    background-color: blue;
+}
+#lime{
+    background-color:rgb(8, 240, 8);
+}
+#yellow{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
